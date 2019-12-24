@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 Toast.makeText(MainActivity.this, "APPS REMOVED", Toast.LENGTH_SHORT).show();
                 break;
             default:
-                Toast.makeText(MainActivity.this, "NOT FOUND", Toast.LENGTH_SHORT).show(); //This toast is working perfectly
+                Toast.makeText(MainActivity.this, "NOT FOUND", Toast.LENGTH_SHORT).show(); 
 
         }
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(MainActivity.this, "SIKE!!!", Toast.LENGTH_SHORT).show();
+       
         Intent intent = new Intent(Intent.ACTION_DIAL);
         //intent.setData(Uri.parse("tel:0123456789"));
         startActivity(intent);
